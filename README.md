@@ -67,7 +67,7 @@
 6. Fields named with the prefix_mongo will be either removed if not needed or replaced with field that will represent the equivilant new core entity after is migrated
 
 
-## Dependencies
+# Dependencies
 
 |Titan Routes|||||
 |---|----|---|----|----|
@@ -83,17 +83,17 @@ member.php|route|/member/api/families/{familyId}/beneficiary-products/search||"m
 ||route|/member/api/family-beneficiaries-product||member, kardia, terraform|
 ||route|/member/api/family-beneficiaries-product/{id}||member, kardia|
 
-# Reporting
+## Reporting
 1. reports-writer
 2. cr-writer
 3. reports-reader
 
-# Titan Script/Crons
+## Titan Script/Crons
 1. beneficiary-remove-extra-fields (script)
 2. find-duplicate-beneficiaries (script)
 3. orphanded-beneficiaries (script)
 
-# Titan Events
+## Titan Events
 1. beneficiaryAddressUpdated
 2. beneficiaryAmountUpdated
 3. beneficiaryBenTypeUpdated
@@ -108,6 +108,8 @@ member.php|route|/member/api/families/{familyId}/beneficiary-products/search||"m
 12. beneficiaryTaxNumberUpdated
 13. beneficiaryTypeUpdated
 
-# Other Notes
+## Other Notes
 1. 'CopyEmployer' functionality
 2. Xerox implications
+
+## Other Dependencies that can not be resolved until additional entities are migrated
